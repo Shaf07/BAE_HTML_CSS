@@ -1,0 +1,19 @@
+body {
+    color:black;
+    background-color: beige;
+}
+img{
+    width: 150px;
+    height: 150px;
+}
+div{
+    margin-top: 10%;
+    border: 3px solid white;
+    border-radius: 10px;
+    width: 30%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    padding: 3%;
+    border-color: red;
+}
