@@ -97,47 +97,8 @@ function challenge(){
         }
      }
  }
-function challengeSimple(){
 
-    let A = window.prompt("enter number");
-    if (A > 2000 && A < 6000){
-        console.log("A");
-        if (A < 4000){
-            console.log("E")
-        }else{
-            console.log("D")
-        }
-    }else if (A < 6000){
-        console.log("A", "C")
-    }else if (A < 100 && A < 600){
-            console.log("1", "3");
-            if (A < 4000){
-                console.log("E")
-            }else{
-                console.log("D")
-            }
-        }else if (A < 6000){
-            console.log("A", "C")
-    
-        }else if{
-        console.log("1");
-        if (A > 100){
-            console.log("3")
-            if (A > 600){
-                console.log("5")
-            }else{
-                console.log("4")
-                if (A>500){
-                    console.log("6")
-                }else{
-                    console.log("7")
-                }
-            }
-        }else{
-            console.log("2")
-        }
-     }
- }
+ 
 function blackjack(){
     let cardOne = Math.floor(Math.random()* (21 - 1) + 1);
     let cardTwo = Math.floor(Math.random()* (21 - 1) + 1);
@@ -158,3 +119,21 @@ function genNumbers(){
         console.log(i);
     }
 }
+
+
+function fizzBuzz(num){
+    if (num%3 === 0 && num%5 === 0){
+       return "FizzBuzz";
+    }
+    else if (num%3 === 0 && num%5 > 0){
+        return "Fizz";
+    }
+    else if (num%5 === 0 && num%3 > 0){
+        return "Buzz"
+    }else{
+        return num;
+    }
+}
+
+console.log(fizzBuzz(6))
+
