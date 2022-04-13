@@ -65,4 +65,12 @@ function inputAge(age){
     }
 }
 
-inputAge(66)
+const divideThingy = function(a, b){  //creates an anonymous function, its NOT a variable
+    console.log(a / b)
+}   
+
+const divideArrow = (a, b) => console.log(a/b);
+
+divideThingy(9,3);
+divideArrow(15, 3);
+
